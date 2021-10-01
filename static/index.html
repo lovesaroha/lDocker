@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="ldocker gui">
+    <title>lDocker</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fa.min.css">
+</head>
+
+<body>
+    <div class="container w-full mx-auto max-w-8/12 md:px-4 pb-8 mb-6" id="view_id"></div>
+    <!-- Footer. -->
+    <div class="mb-2 card text-center p-2 mx-auto max-w-xl">
+        <h4 class="text-subtitle"><a href="https://github.com/lovesaroha/lDocker" target="_blank">LoveSaroha/lDocker</a>
+        </h4>
+        <h3 class="text-subtitle font-bold mb-0 hover:underline cursor-pointer"
+            onclick="javascript: window.location = 'https://lovesaroha.com';">Love Saroha</h3>
+        <h4 class="text-gray">lovesaroha1994@gmail.com</h4>
+    </div>
+    <!-- Modal element. -->
+    <div class="fixed z-50 inset-0 overflow-y-auto" onclick="javascript: closeModalBackground(event);"
+        style="display: none;" id="modal_id" aria-labelledby="modal-title" role="dialog" aria-modal="true"></div>
+    <!-- Include script.js file -->
+    <script type="text/javascript" src="./assets/js/helper.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script type="text/javascript" src="./assets/js/images.js"></script>
+    <script type="text/javascript" src="./assets/js/containers.js"></script>
+</body>
+
+<!-- Home page template. -->
+<template id="homePageTemplate_id">
+    <!-- Header. -->
+    <h1 class="font-bold display-1 underline">
+        lDocker
+    </h1>
+    <h4 class="text-subtitle mb-6">Simple container management tool for docker</h4>
+    <div id="info_id"></div>
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="col-span-1">
+            <div id="containersList_id" class="card p-4"></div>
+        </div>
+        <div class="col-span-1">
+            <div id="imagesList_id" class="card p-4"></div>
+        </div>
+    </div>
+</template>
+
+
+</html>
