@@ -19,9 +19,9 @@ go get -u "github.com/docker/docker/client"
 Make sure [Git is installed](https://git-scm.com/downloads) on your machine and in your system's `PATH`.
 
 ## Usage
-``bash
+```bash
 go run main.go
-``
+```
 
 ![image](https://raw.githubusercontent.com/lovesaroha/gimages/main/89.png)
 
